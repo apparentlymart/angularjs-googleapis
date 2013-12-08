@@ -1,0 +1,14 @@
+<html ng-app="pickfile">
+<head>
+<title>Pick a File from Google Drive</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+<script src="../angular-googleapis.js"></script>
+<script src="pickfile.js"></script>
+</head>
+<body ng-controller="pickerExample">
+
+  <button ng-click="pickSomething()">Pick Something</button>
+  <pre>{{ pickedData | json }}</pre>
+
+</body>
+</html>
